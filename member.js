@@ -1,9 +1,6 @@
-export interface SkillsMember {
-    name: string;
-    age: number;
-    email: string;
-}
-
-export function createSkillsMember(name: string, age: number, email: string): SkillsMember {
-    return { name, age, email };
+function skillsmembers() {
+    var skills = document.getElementById("skills").value;
+    var members = document.getElementById("members").value;
+    var skillsmembers = skills + members;
+    document.getElementById("skillsmembers").value = skillsmembers;
 }
